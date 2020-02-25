@@ -15,4 +15,5 @@ void rtt_init(void)
 	
 	uart_init(115200);				//串口初始化
 	LED_Init();						//初始化LED
+	KEY_Init();						//初始化按键
 }

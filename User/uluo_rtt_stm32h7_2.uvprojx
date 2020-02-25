@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath>..\OBJ\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER, STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core;..\User;..\System\delay;..\System\sys;..\System\rtt_usart;..\HAL_Lib\STM32H7xx_HAL_Driver\Inc;..\Hardware\LED</IncludePath>
+              <IncludePath>..\Core;..\User;..\System\delay;..\System\sys;..\System\rtt_usart;..\HAL_Lib\STM32H7xx_HAL_Driver\Inc;..\Hardware\LED;..\Hardware\KEY;..\Hardware\I2C;..\Hardware\SPI;..\Hardware\LCD18</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -406,6 +406,11 @@
               <FileName>rtt_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\rtt_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtt_threads.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\rtt_threads.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -517,6 +522,26 @@
               <FileType>1</FileType>
               <FilePath>..\HAL_Lib\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32h7xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HAL_Lib\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HAL_Lib\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HAL_Lib\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_spi_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HAL_Lib\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -526,6 +551,26 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\LED\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\KEY\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\SPI\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\I2C\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd18.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\LCD18\lcd18.c</FilePath>
             </File>
           </Files>
         </Group>

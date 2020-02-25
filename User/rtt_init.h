@@ -2,6 +2,7 @@
 #include "delay.h"
 #include "rtt_usart.h" 
 #include "led.h"
+#include "key.h"
 
 #include <rtthread.h>
 

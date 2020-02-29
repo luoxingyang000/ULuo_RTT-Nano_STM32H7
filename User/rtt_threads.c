@@ -20,7 +20,7 @@ static rt_thread_t tid1 = RT_NULL;
 static void tid1_service(void *parameter)
 {
     rt_uint32_t count = (rt_uint32_t) parameter;
-	rt_uint32_t hh,mm,ss;
+		rt_uint32_t hh,mm,ss,i;
 
     while(1)
     {
@@ -29,7 +29,15 @@ static void tid1_service(void *parameter)
 		ss = count % 3600 % 60;
 		count++;
         rt_kprintf("Time elapsed since power on: %d h %d m %d s\n", hh, mm, ss);
-        rt_thread_mdelay(1000);
+        //rt_thread_mdelay(1000);
+				rt_kprintf("SystemCoreClock : %d Hz\n",SystemCoreClock);
+			rt_kprintf("SystemCoreClock : %d Hz\n",SystemCoreClock);
+			rt_kprintf("SystemCoreClock : %d Hz\n\n",SystemCoreClock);
+			for(i=0;i<1000;i++)
+			{
+				rt_hw_us_delay(1000);
+			}
+					
     }
 }
 
